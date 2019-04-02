@@ -1,0 +1,113 @@
+Beyer Mod Relu ------------------------------------------------------------------------------------------------------------
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 261.9+-23.3
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 424.9+-36.0
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 675.8+-83.9
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 119.9+-7.8
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 178.5+-12.8
+
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 116.4+-3.2
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 120.8+-3.0
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 177.5+-5.9
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 14.8+-0.6
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 18.3+-0.8
+
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 66.2+-1.1
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 65.9+-1.0
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 101.0+-1.8
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 8.2+-0.3
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 10.2+-0.3
+
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 47.1+-0.6
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 45.3+-0.5
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 69.2+-1.1
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 5.7+-0.1
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 6.9+-0.1
+
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 35.2+-0.4
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 34.7+-0.4
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 53.4+-0.7
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 4.3+-0.1
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 5.3+-0.0
+
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 29.1+-0.5
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 28.2+-0.3
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: trt, gpu id: 0, mean of 500 runs): 43.9+-0.6
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 3.5+-0.0
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 4.3+-0.0
+
+
+MobileNet v2 1.0 -----------------------------------------------------------------------------------------------------------
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 77.2+-2.8
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 167.0+-8.3
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 303.0+-22.5
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 35.9+-2.2
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 67.9+-2.4
+
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 51.2+-0.8
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 74.5+-1.1
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 103.2+-2.1
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 11.1+-0.5
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 17.4+-1.0
+
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 33.0+-0.4
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 42.9+-0.5
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 61.6+-1.3
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 6.5+-0.3
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 9.8+-0.4
+
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 24.3+-0.3
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 30.2+-0.3
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 42.7+-0.5
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 5.0+-0.1
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 7.1+-0.2
+
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 19.5+-0.2
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 23.5+-0.2
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 33.3+-0.4
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 4.1+-0.1
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 5.5+-0.1
+
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 16.2+-0.1
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 19.2+-0.2
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 26.7+-0.3
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 3.2+-0.1
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 4.5+-0.1
+
+
+MobileNet v2 0.75 ----------------------------------------------------------------------------------------------------------
+
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 81.9+-2.7
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 173.3+-10.0
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 308.5+-27.1
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 42.9+-2.7
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 81.0+-4.1
+
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 56.9+-1.0
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 85.1+-1.4
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 118.0+-2.5
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 12.5+-0.7
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 18.7+-1.3
+
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 37.5+-0.4
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 49.1+-0.6
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 71.3+-1.3
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 7.8+-0.3
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 11.5+-0.4
+
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 27.9+-0.3
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 34.7+-0.3
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 49.2+-0.7
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 5.8+-0.1
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 8.3+-0.3
+
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 22.5+-0.2
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 27.1+-0.3
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 38.5+-0.7
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 4.6+-0.1
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 6.4+-0.2
+
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 18.7+-0.2
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 22.0+-0.2
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: trt, gpu id: 0, mean of 500 runs): 31.0+-0.3
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 3.8+-0.1
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 5.4+-0.1

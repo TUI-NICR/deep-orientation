@@ -1,0 +1,61 @@
+{
+    "Art_wrong_way": false, 
+    "Average Distance": {
+        "large": 3660.4090935468894, 
+        "small": 3659.5635386119257
+    }, 
+    "Degree": 109.0, 
+    "Frame_Number": 171, 
+    "Gender": "Mann", 
+    "Kinect": 4, 
+    "Offset": -15, 
+    "ROI_in_Boundary": {
+        "large": {
+            "bot": false, 
+            "left": false, 
+            "right": false, 
+            "top": false
+        }, 
+        "small": {
+            "bot": false, 
+            "left": false, 
+            "right": false, 
+            "top": false
+        }
+    }, 
+    "ROI_x": {
+        "large": [
+            708, 
+            829
+        ], 
+        "small": [
+            163, 
+            208
+        ]
+    }, 
+    "ROI_y": {
+        "large": [
+            352, 
+            865
+        ], 
+        "small": [
+            135, 
+            312
+        ]
+    }, 
+    "Session": "jacke", 
+    "Subject": "p0", 
+    "Subject_Height": 1.71, 
+    "Take": 1, 
+    "Tape_Path": "p0-jacke-Kinect4", 
+    "Tracking": {
+        "id": 0.0, 
+        "pitch": -4.8518, 
+        "roll": -0.508, 
+        "valid": true, 
+        "x": 111.538, 
+        "y": 1512.536, 
+        "yaw": -86.3689, 
+        "z": 2037.844
+    }
+}

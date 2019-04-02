@@ -1,0 +1,112 @@
+Beyer Mod Relu ------------------------------------------------------------------------------------------------------------
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 889.1+-50.4
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 1168.0+-51.6
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 222.0+-6.0
+	FPS (beyer_mod_relu, biternion, depth, 1x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 317.0+-14.0
+
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 243.9+-10.1
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 212.9+-3.4
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 9.6+-0.2
+	FPS (beyer_mod_relu, biternion, depth, 20x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 10.7+-0.2
+
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 133.4+-1.5
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 112.7+-1.0
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 4.7+-0.0
+	FPS (beyer_mod_relu, biternion, depth, 40x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 5.3+-0.1
+
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 90.4+-1.4
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 76.4+-0.5
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 3.1+-0.0
+	FPS (beyer_mod_relu, biternion, depth, 60x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 3.5+-0.0
+
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 68.7+-0.8
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 57.2+-0.3
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 2.3+-0.0
+	FPS (beyer_mod_relu, biternion, depth, 80x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 2.6+-0.0
+
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: None, gpu id: 0, mean of 500 runs): 54.6+-0.7
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: frozen, gpu id: 0, mean of 500 runs): 46.0+-0.3
+	**** Failed to initialize TensorRT
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: None, gpu id: -1, mean of 500 runs): 1.9+-0.0
+	FPS (beyer_mod_relu, biternion, depth, 100x126x48, float32, opt: frozen, gpu id: -1, mean of 500 runs): 2.1+-0.0
+
+
+MobileNet v2 1.0 -----------------------------------------------------------------------------------------------------------
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 228.2+-18.6
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 409.6+-31.6
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 88.6+-2.5
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 141.2+-3.9
+
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 108.6+-1.4
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 108.6+-1.1
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 12.3+-0.2
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 19.0+-0.2
+
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 63.3+-1.0
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 59.9+-0.3
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 5.6+-0.1
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 7.9+-0.1
+
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 45.0+-0.5
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 41.1+-0.2
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 3.8+-0.0
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 5.2+-0.0
+
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 34.6+-0.2
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 31.5+-0.2
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 2.9+-0.0
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 4.0+-0.0
+
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 28.5+-0.3
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 25.4+-0.2
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 2.3+-0.0
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 3.2+-0.0
+
+
+MobileNet v2 0.75 ----------------------------------------------------------------------------------------------------------
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 219.5+-31.6
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 434.8+-6.3
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 103.0+-3.3
+	FPS (mobilenet_v2, biternion, depth, 1x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 172.0+-5.4
+
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 124.9+-2.3
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 126.4+-0.8
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 14.0+-0.2
+	FPS (mobilenet_v2, biternion, depth, 20x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 20.1+-0.3
+
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 73.8+-1.1
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 69.4+-0.4
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 6.4+-0.1
+	FPS (mobilenet_v2, biternion, depth, 40x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 8.9+-0.1
+
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 52.3+-0.8
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 47.5+-0.3
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 4.4+-0.0
+	FPS (mobilenet_v2, biternion, depth, 60x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 6.1+-0.1
+
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 40.7+-0.3
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 36.3+-0.2
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 3.4+-0.0
+	FPS (mobilenet_v2, biternion, depth, 80x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 4.7+-0.0
+
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: 0, mean of 500 runs): 32.6+-0.3
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: 0, mean of 500 runs): 29.3+-0.2
+	**** Failed to initialize TensorRT
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: None, gpu id: -1, mean of 500 runs): 2.6+-0.0
+	FPS (mobilenet_v2, biternion, depth, 100x96x96, float32, opt: frozen, gpu id: -1, mean of 500 runs): 3.6+-0.0
