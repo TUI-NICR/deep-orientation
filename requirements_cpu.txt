@@ -1,0 +1,8 @@
+opencv-python==3.4.3.*
+tensorflow==1.12.0
+tqdm
+scipy
+seaborn
+scikit-learn
+matplotlib
+seaborn

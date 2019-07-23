@@ -7,7 +7,7 @@ import numpy as np
 import tensorflow.keras.backend as K
 from tensorflow.keras.utils import to_categorical
 
-import tui_image_utils as img_utils
+from . import img_utils
 
 # see: extract_mean_and_std.py
 _RGB_MEANS = {

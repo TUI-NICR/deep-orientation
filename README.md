@@ -6,19 +6,26 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
 
 1. Clone repository:
     ```bash
-    git clone https://github.com/danielS91/deep-orientation.git
+    git clone https://github.com/tui-nicr/deep-orientation.git
     ```
 
-2. Install dependencies:
+2. Set up environment and install dependencies:
     ```bash
-    # dependencies
-    pip install -r /path/to/this/repository/requirements.txt [--user]
+    # create Python 3.6 environment
+    conda create --name env_deep_orientation python=3.6
+    conda activate env_deep_orientation
+ 
+    # install dependencies
+    # GPU version:
+    pip install -r /path/to/this/repository/requirements_gpu.txt [--user]
+    # CPU version:
+    pip install -r /path/to/this/repository/requirements_cpu.txt [--user]
     
     # opt. dependencies to plot models, see src/plot_models.py
     conda install graphviz pydot
     ```
 
-3. For network training: Download [NICR RGB-D Orientation Data Set](https://www.tu-ilmenau.de/neurob/data-sets-code/rgb-d-orientation/) and install [dataset package](https://github.com/danielS91/nicr-rgb-d-orientation-data-set)  
+3. For network training: Download [NICR RGB-D Orientation Data Set](https://www.tu-ilmenau.de/neurob/data-sets-code/rgb-d-orientation/) and install [dataset package](https://github.com/tui-nicr/nicr-rgb-d-orientation-data-set)  
     
 
 ## Apply already trained network for orientation estimation
@@ -40,6 +47,7 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
         --input_width 48 \
         --output_type biternion \
         --n_samples 1
+        [--cpu]
     ```
     
     ![beyer_mod_relu_depth_without_sampling](img/beyer_mod_relu_depth_without_sampling.gif)
@@ -56,6 +64,7 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
         --input_width 48 \
         --output_type biternion \
         --n_samples 25
+        [--cpu]      
     ```
     ![beyer_mod_relu_depth_with_sampling](img/beyer_mod_relu_depth_with_sampling.gif)
  
@@ -73,6 +82,7 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
         --output_type biternion \
         --mobilenet_v2_alpha 1.00 \
         --n_samples 1
+        [--cpu]      
     ```
     
     ![mobilenet_v2_depth_without_sampling](img/mobilenet_v2_depth_without_sampling.gif)
@@ -91,6 +101,7 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
         --output_type biternion \
         --mobilenet_v2_alpha 1.00 \
         --n_samples 1
+        [--cpu]     
     ```
     
     ![mobilenet_v2_rgb_without_sampling](img/mobilenet_v2_rgb_without_sampling.gif)    
@@ -101,8 +112,13 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
     ```bash
     cd /path/to/this/repository/src
     ```
+    
+2. Extract patches
+    ```bash
+    python extract_patches.py --dataset_basepath /path/to/nicr_rgb_d_orientation_data_set
+    ```
 
-2. Train multiple neural networks with same hyperparameters
+3. Train (GPU only) multiple neural networks with same hyperparameters 
     ```bash
     # best performing configuration and hyperparameters from paper
     python train.py \
@@ -271,7 +287,7 @@ IEEE International Conference on Intelligent Robots and Systems (IROS) 2019
 @InProceedings{doe2019
   Title = {{Deep Orientation: Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Applications}},
   Author = {Lewandowski, Benjamin and Seichter, Daniel and Wengefeld, Tim and Pfennig, Lennard and Drumm, Helge and Gross, Horst-Michael},
-  Booktitle = {Submitted to: IEEE International Conference on Intelligent Robots and Systems (IROS)},
+  Booktitle = {To be published in: IEEE International Conference on Intelligent Robots and Systems (IROS)},
   Year = {2019}
 }
 ```

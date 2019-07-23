@@ -98,7 +98,8 @@ def _parse_args():
     parser.add_argument('-d', '--devices',
                         type=str,
                         default='0',
-                        help="GPU device id(s) to train on. (default: 0)")
+                        help="GPU device id(s) to use. Use '' (empty string) "
+                             "for CPU only (default: 0)")
 
     # return parsed args
     return parser.parse_args()

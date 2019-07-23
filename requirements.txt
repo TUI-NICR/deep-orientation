@@ -1,6 +1,0 @@
-opencv-python==3.4.1
-tensorflow-gpu==1.12.0
-tqdm
-scipy
-seaborn
-scikit-learn

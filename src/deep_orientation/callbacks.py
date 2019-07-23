@@ -3,91 +3,10 @@
 .. codeauthor:: Daniel Seichter <daniel.seichter@tu-ilmenau.de>
 
 """
-import os
-import pickle
-from time import time
-
 import numpy as np
 import tensorflow.keras.backend as K
 from tensorflow.keras.layers import Input
 from tensorflow.keras.callbacks import Callback
-
-
-class Weblogger(Callback):
-    def __init__(self,
-                 n_epochs,
-                 graph_elements=None,
-                 gpu_logger_home_dir=None,
-                 verbose=0):
-        super(Weblogger, self).__init__()
-
-        # determine filepath for log file
-        if gpu_logger_home_dir is None:
-            if os.path.exists('/home/gpuacc'):
-                # nikr lab
-                self._gpu_logger_home_dir = '/home/gpuacc'
-            else:
-                # makalu
-                self._gpu_logger_home_dir = os.path.expanduser('~/gpuacc')
-        self._filepath = pid = os.path.join(self._gpu_logger_home_dir,
-                                            'gpuInfo',
-                                            f'{os.getpid()}.trainInfo')
-
-        self._graph_elements = graph_elements or []
-        self._n_epochs = n_epochs
-
-        # default markdown message
-        self._markdown_message = ''
-
-        # initialize graph elements
-        self._graph = {e: [] for e in ['epoch']+self._graph_elements}
-
-    @property
-    def markdown_message(self):
-        return self._markdown_message
-
-    @markdown_message.setter
-    def markdown_message(self, message):
-        self._markdown_message = message.replace('\n', '\\\\')
-
-    def on_epoch_begin(self, epoch, logs):
-        self._time = time()
-
-    def on_epoch_end(self, epoch, logs=None):
-        if logs is None:
-            return
-
-        # update time
-        epoch_duration = time() - self._time
-
-        # append time to logs
-        # note: for tensorflow callback, we need numpy objects
-        logs['time'] = np.array(epoch_duration)
-
-        self._graph['epoch'].append(epoch)
-        for el in self._graph_elements:
-            self._graph[el].append(logs.get(el, -1))
-
-        # collect infos for web logger
-        train_infos = {
-            'epoch': epoch,
-            'epochs': self._n_epochs,
-            'epoch_duration': epoch_duration,
-            'markdown': self._markdown_message,
-            'metrics': logs,
-            'graph': self._graph
-        }
-
-        # write to file
-        try:
-            with open(self._filepath, 'wb') as f:
-                # pickle with protocol version 2
-                pickle.dump(train_infos, f, 2)
-            # change access right so that file can be read from other users
-            os.chmod(self._filepath, 0o666)
-        except Exception as e:
-            print(f"Error: Unable to write weblogger file: {self._filepath}: "
-                  f"{e}")
 
 
 class LRPolyDecay(Callback):

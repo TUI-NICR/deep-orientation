@@ -557,23 +557,6 @@ def main():
     # CSV logger
     cbs.append(CSVLogger(filename=os.path.join(output_path, 'log.csv')))
 
-    # web logger
-    web_logger = callbacks.Weblogger(n_epochs=args.n_epochs,
-                                     graph_elements=['loss',
-                                                     'valid_loss',
-                                                     'test_loss'])
-
-    def _html_details(summary, content):
-        # TODO(dase6070): currently not working with weblogger
-        # return f"<details><summary>{summary}</summary>{content}</details>"
-        return f'{summary}: \n{content}\n'
-
-    web_logger.markdown_message = \
-        f'```{exp_identifier}```\n' + \
-        _html_details('Config', json.dumps(vars(args))) + \
-        _html_details('Watch on Tensorboard', '[Link](http://localhost:16006)')
-    cbs.append(web_logger)
-
     # Tensorboard
     cbs.append(TensorBoard(log_dir=output_path,
                            histogram_freq=0,

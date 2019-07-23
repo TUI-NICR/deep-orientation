@@ -120,7 +120,12 @@ def _parse_args():
     parser.add_argument('-d', '--devices',
                         type=str,
                         default='0',
-                        help="GPU device id(s) to train on. (default: 0)")
+                        help="GPU device id(s) to use. (default: 0)")
+
+    parser.add_argument('-c', '--cpu',
+                        action='store_true',
+                        default=False,
+                        help="CPU only, do not run with GPU support")
 
     parser.add_argument('-v', '--verbose',
                         action='store_true',
@@ -149,11 +154,13 @@ def main():
     # parse args --------------------------------------------------------------
     args = _parse_args()
 
-    # set device --------------------------------------------------------------
-    os.environ['CUDA_VISIBLE_DEVICES'] = args.devices
-
-    # set data format ---------------------------------------------------------
-    if args.devices == '' or args.model == 'mobilenet_v2':
+    # set device and data format ----------------------------------------------
+    if args.cpu:
+        os.environ['CUDA_VISIBLE_DEVICES'] = ''
+        args.devices = ''
+    else:
+        os.environ['CUDA_VISIBLE_DEVICES'] = args.devices
+    if not args.devices or args.model == 'mobilenet_v2':
         # note: tensorflow supports b01c pooling on cpu only
         K.set_image_data_format('channels_last')
     else:
@@ -227,7 +234,7 @@ def main():
                                                    args.devices or '""',
                                                    args.dtype),
                               shell=True,
-                              cwd=os.path.dirname(__file__))
+                              cwd=os.path.dirname(__file__) or './')
 
         # load frozen graph
         if args.verbose:
