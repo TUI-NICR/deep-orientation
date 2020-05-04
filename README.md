@@ -284,11 +284,13 @@ To be published in:
 IEEE International Conference on Intelligent Robots and Systems (IROS) 2019
 
 ```bibtex
-@InProceedings{doe2019
-  Title = {{Deep Orientation: Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Applications}},
-  Author = {Lewandowski, Benjamin and Seichter, Daniel and Wengefeld, Tim and Pfennig, Lennard and Drumm, Helge and Gross, Horst-Michael},
-  Booktitle = {To be published in: IEEE International Conference on Intelligent Robots and Systems (IROS)},
-  Year = {2019}
+@InProceedings{Lewandowski-IROS-2019,
+  author    = {Lewandowski, Benjamin and Seichter, Daniel and Wengefeld, Tim and Pfennig, Lennard and Drumm, Helge and Gross, Horst-Michael},
+  title     = {Deep Orientation: Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Applications},
+  booktitle = {IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Macau},
+  year      = {2019},
+  pages     = {441--448},
+  publisher = {IEEE},
 }
 ```
 
