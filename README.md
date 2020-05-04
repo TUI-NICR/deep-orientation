@@ -276,12 +276,9 @@ The source code and the network weights are published under BSD 3-Clause
 license, see [license file](LICENSE) for details.
 
 If you use the source code or the network weights, please cite the following paper:
->Benjamin Lewandowski, Daniel Seichter, Tim Wengefeld, Lennard Pfennig, 
-Helge Drumm and Horst-Michael Gross
-*Deep Orientation: Fast and Robust Upper Body Orientation Estimation for Mobile 
-Robotic Applications.*
-To be published in: 
-IEEE International Conference on Intelligent Robots and Systems (IROS) 2019
+>Lewandowski, B., Seichter, D., Wengefeld, T., Pfennig, L., Drumm, H., Gross, H.-M.
+*Deep Orientation: Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Applications.*
+in: IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Macau, pp. 441-448, IEEE 2019
 
 ```bibtex
 @InProceedings{Lewandowski-IROS-2019,
