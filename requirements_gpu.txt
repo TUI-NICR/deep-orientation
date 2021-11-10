@@ -1,5 +1,5 @@
 opencv-python==3.4.3.*
-tensorflow-gpu==1.12.3
+tensorflow-gpu==2.5.2
 tqdm
 scipy
 seaborn
