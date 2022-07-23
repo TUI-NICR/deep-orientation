@@ -272,8 +272,7 @@ Fast and Robust Upper Body Orientation Estimation for Mobile Robotic Application
     ```
 
 ## License and Citations
-The source code and the network weights are published under BSD 3-Clause 
-license, see [license file](LICENSE) for details.
+The source code is published under BSD 3-Clause license, see [license file](LICENSE) for details.
 
 If you use the source code or the network weights, please cite the following paper:
 >Lewandowski, B., Seichter, D., Wengefeld, T., Pfennig, L., Drumm, H., Gross, H.-M.
